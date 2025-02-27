@@ -15,18 +15,48 @@
 body {
     width: 100%;
     height: 100vh;
-    background-color: rgb(65, 150, 184);
+    margin: 0px;
+    background-color: rgb(47, 128, 160);
 }
 
-nav > ul {
-    background-color: rgb(62, 120, 168);
-  }
+.navbar ul{
+  background-color: rgb(62, 120, 168);
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar a {
+  color:antiquewhite;
+  text-decoration: wavy;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover{
+  color: brown;
+  background-color: plum;
+}
+
+.navbar a:visited {
+  color: silver;
+}
+
+.navbar li{
+  float: right;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
 
 h1 {
     margin: 10px;
     font-family: 'Times', serif;
     font-size: 60px;
-    color: rgb(241, 84, 84);
+    color: rgb(180, 65, 65);
     text-align: center;
 }
 
