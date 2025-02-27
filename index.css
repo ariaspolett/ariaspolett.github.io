@@ -29,7 +29,7 @@ body {
 }
 
 .navbar a {
-  color:antiquewhite;
+  color: darkgreen;
   text-decoration: wavy;
   padding: 15px;
   display: block;
@@ -39,10 +39,6 @@ body {
 .navbar a:hover{
   color: brown;
   background-color: plum;
-}
-
-.navbar a:visited {
-  color: silver;
 }
 
 .navbar li{
