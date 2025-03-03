@@ -48,13 +48,6 @@ body {
   text-decoration: none;
 }
 
-main {
-  background-image: url(https://media.istockphoto.com/id/1371944453/vector/blue-abstract-wave-background.jpg?s=1024x1024&w=is&k=20&c=A6Hnd05fDWLt0BqGWKtTJxIIGUkPKdvbeoMZTIshXDE=);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
-}
 h1 {
     margin: 10px;
     font-family: 'Times', serif;
