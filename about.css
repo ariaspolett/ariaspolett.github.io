@@ -19,35 +19,39 @@ body {
   background-color: #498ec6;
 }
 
+.navbar {
+  width: 100%; 
+  background-color: rgb(19, 20, 100);
+}
+
 .navbar ul{
-background-color: rgb(19, 20, 100);
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-overflow: hidden;
-text-align: center;
-}
-
-.navbar a {
-color: #498ec6;
-text-decoration: wavy;
-padding: 15px;
-display: block;
-text-align: center;
-}
-
-.navbar a:hover{
-color: rgb(19, 20, 100);
-background-color: rgb(102, 102, 204);
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+  justify-content: center;
+  overflow: hidden;
+  align-items: center;
 }
 
 .navbar li{
-float: right;
-display: block;
-padding: 10px;
-font-family: 'Courier New', Courier, monospace;
-font-weight: 1000;
-font-size: 20px;
+  display: block;
+  padding: 0px 30px 0px 30px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 1000;
+  font-size: 20px;
+  }
+
+.navbar a {
+  color: #498ec6;
+  text-decoration: wavy;
+  padding: 10px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover{
+  color: rgb(19, 20, 100);
+  background-color: rgb(102, 102, 204);
 }
 
 h1 {
