@@ -4,6 +4,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .contact-inputs {
+    width: 80vw;
+  }
+}
+
 *,
 ::before,
 ::after {
@@ -54,23 +60,95 @@ body {
   background-color: rgb(102, 102, 204);
 }
 
-h1 {
-  margin: 10px;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 60px;
-  color: whitesmoke;
-  text-align: center;
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
-.break {
+.contact-left {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-left-title h1{
+  font-weight: 600;
+  color: whitesmoke;
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.contact-left-title hr{
+  width: 200px;
+  height: 5px;
+  margin-bottom: 20px; 
   color:black;
-  border: 1px solid rgb(64, 80, 172);
+  border: 5px solid rgb(64, 80, 172);
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color: rgb(64, 80, 172);
+  border-radius: 50px;
+}
+
+.contact-left textarea {
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid rgb(17, 0, 94);
+}
+
+.contact-inputs::placeholder {
+  color: rgb(64, 80, 172);
+}
+
+.contact-left button {
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: whitesmoke;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, rgb(64, 80, 172), rgb(17, 0, 94));
+  cursor: pointer;
+}
+
+h1 {
+  margin: 0px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 h2 {
   margin: 10px;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 40px;
+  font-size: 25px;
   color: rgb(17, 0, 94);
+}
+
+.contacts a {
+  color:rgb(19, 20, 100)
+}
+
+.contacts a:hover{
+  color: purple;
+}
+
+.email {
+  font-size: 2rem;
 }
