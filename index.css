@@ -62,9 +62,19 @@ h1 {
   text-align: center;
 }
 
-.break {
-  color:black;
-  border: 1px solid rgb(64, 80, 172);
+.fullscreen-img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 h2 {

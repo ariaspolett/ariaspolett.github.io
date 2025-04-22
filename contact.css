@@ -141,6 +141,14 @@ h2 {
   color: rgb(17, 0, 94);
 }
 
+.h2 {
+  margin: 10px;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  color: rgb(17, 0, 94);
+}
+
 .contacts a {
   color:rgb(19, 20, 100)
 }
@@ -151,4 +159,19 @@ h2 {
 
 .email {
   font-size: 2rem;
+}
+
+.fullscreen-img {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
