@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 100vh;
   margin: 0px;
-  background-color: #498ec6;
+  background-color: rgb(64, 80, 172)
 }
 
 .navbar {
@@ -41,16 +41,16 @@ body {
 
 .navbar li{
   display: block;
-  padding: 0px 30px 0px 30px;
+  padding: 0 1.875rem;
   font-family: 'Courier New', Courier, monospace;
   font-weight: 1000;
-  font-size: 20px;
+  font-size: 1.25rem;
   }
 
 .navbar a {
   color: #498ec6;
   text-decoration: wavy;
-  padding: 10px;
+  padding: 1rem;
   display: block;
   text-align: center;
 }
@@ -58,6 +58,10 @@ body {
 .navbar a:hover{
   color: rgb(19, 20, 100);
   background-color: rgb(102, 102, 204);
+}
+
+.break {
+  border: 0.125 solid whitesmoke;
 }
 
 .contact-container {
@@ -71,94 +75,106 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 .contact-left-title h1{
   font-weight: 600;
   color: whitesmoke;
-  font-size: 60px;
-  margin-bottom: 10px;
+  font-size: 3.75rem;
+  margin-bottom: 0.625rem;
 }
 
 .contact-left-title hr{
-  width: 200px;
-  height: 5px;
-  margin-bottom: 20px; 
+  width: 15.625rem;
+  height: 0.625rem;
+  margin-bottom: 1.25rem; 
+  margin-left: 0.3125rem;
   color:black;
-  border: 5px solid rgb(64, 80, 172);
+  border: 0.3125rem solid rgb(64, 80, 172);
 }
 
 .contact-inputs {
-  width: 400px;
-  height: 50px;
+  width: 25rem;
+  height: 3.125rem;
   border: none;
   outline: none;
-  padding-left: 25px;
+  padding-left: 1.5625rem;
   font-weight: 500;
   color: rgb(64, 80, 172);
-  border-radius: 50px;
+  border-radius: 3.125rem;
 }
 
 .contact-left textarea {
-  height: 140px;
-  padding-top: 15px;
-  border-radius: 20px;
+  height: 8.75rem;
+  padding-top: 0.9375rem;
+  border-radius: 1.25rem;
 }
 
 .contact-inputs:focus {
-  border: 2px solid rgb(17, 0, 94);
+  border: 0.125rem solid rgb(17, 0, 94);
 }
 
 .contact-inputs::placeholder {
   color: rgb(64, 80, 172);
+  font-family: 'Courier New', Courier, monospace
 }
 
 .contact-left button {
   display: flex;
   align-items: center;
-  padding: 15px 30px;
-  font-size: 16px;
+  padding: 0.9375rem 1.875rem;
+  font-size: 1rem;
   color: whitesmoke;
-  gap: 10px;
+  gap: 0.625rem;
   border: none;
-  border-radius: 50px;
+  border-radius: 3.125rem;
   background: linear-gradient(270deg, rgb(64, 80, 172), rgb(17, 0, 94));
   cursor: pointer;
 }
 
 h1 {
-  margin: 0px;
+  margin: 0;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
 }
 
 h2 {
-  margin: 10px;
+  margin: 0.3125rem;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: rgb(17, 0, 94);
 }
 
 .h2 {
-  margin: 10px;
+  margin: 0.625rem;
   text-align: left;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 25px;
+  font-size: 1.5625rem;
   color: rgb(17, 0, 94);
-}
-
-.contacts a {
-  color:rgb(19, 20, 100)
-}
-
-.contacts a:hover{
-  color: purple;
 }
 
 .email {
   font-size: 2rem;
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center; 
+  gap: 2rem; 
+  flex-wrap: wrap; 
+  padding: 1rem 0;
+}
+
+.contacts a {
+  color:rgb(19, 20, 100);
+  text-decoration: none;
+}
+
+.contacts a:hover{
+  color: purple;
 }
 
 .fullscreen-img {
@@ -173,5 +189,5 @@ h2 {
   color: white;
   font-size: 3rem;
   text-align: center;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  text-shadow:  0.125rem 0.125rem 0.5rem rgba(0, 0, 0, 0.7);
 }
