@@ -79,3 +79,15 @@ h2 {
   font-size: 40px;
   color: rgb(17, 0, 94);
 }
+
+.button {
+  display: inline-block; 
+  padding: 0.9375rem 1.875rem; 
+  background: #007bff; 
+  color: rgb(17, 0, 94);
+  border: none;
+  border-radius: 3.25rem; 
+  text-decoration: none; 
+  text-align: center;
+  background: linear-gradient(270deg, rgb(122, 56, 167), rgb(99, 48, 238))
+}

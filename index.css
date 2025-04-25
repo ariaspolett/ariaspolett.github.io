@@ -22,6 +22,8 @@ body {
 .navbar {
   width: 100%;
   background-color: rgb(19, 20, 100);
+  position: fixed;
+  z-index: 1000;
 }
 
 .navbar ul {
