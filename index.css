@@ -98,7 +98,7 @@ h2 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 4rem;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.616);
+  background-color: rgb(255, 255, 255, 0.63);
   padding: 4rem;
   border-radius: 0.625rem;
 }
@@ -107,6 +107,18 @@ h2 {
   display: block;
   margin: 1.25rem auto;
   max-width: 90%;
+  height: auto;
+}
+
+.image-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem; /* space between images */
+}
+
+.side-images {
+  width: 10rem;
   height: auto;
 }
 
