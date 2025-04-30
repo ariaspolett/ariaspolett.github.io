@@ -26,8 +26,10 @@ body {
 }
 
 .navbar {
-  width: 100%;
+  width: 100%; 
   background-color: rgb(19, 20, 100);
+  position: fixed;
+  z-index: 1000;
 }
 
 .navbar ul {
@@ -78,4 +80,75 @@ h2 {
   font-family: 'Courier New', Courier, monospace;
   font-size: 2.5rem;
   color: rgb(17, 0, 94);
+}
+
+.contact-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url('images/matthew-mcbrayerblueimage.jpg');
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(17, 0, 94);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4rem;
+  text-align: center;
+  padding: 4rem;
+  border-radius: 0.625rem;
+}
+
+.project-tile {
+  position: relative;
+  display: inline-block;
+  background: #bde0fec2;
+  color: #003049;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-align: center;
+  text-decoration: none;
+  padding: 2rem 4rem; /* 32px top/bottom, 64px left/right */
+  border-radius: 3.125rem; /* 50px */
+  cursor: pointer;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 4px 8px */
+  transition: transform 0.2s;
+  z-index: 0;
+  font-size: 1.2rem;
+  margin: 2rem;
+}
+
+.project-tile::before,
+.project-tile::after {
+  content: '';
+  position: absolute;
+  background: #bde0fe9f;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.project-tile::before {
+  width: 5rem;  /* 80px */
+  height: 5rem;
+  top: -2.5rem; /* -40px */
+  left: 10%;
+}
+
+.project-tile::after {
+  width: 6.25rem;  /* 100px */
+  height: 6.25rem;
+  top: -3.125rem;  /* -50px */
+  right: 10%;
+}
+
+.project-tile:hover {
+  transform: scale(1.05);
 }
