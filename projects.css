@@ -67,7 +67,8 @@ body {
 }
 
 h1 {
-  margin: 0.625rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   font-family: 'Courier New', Courier, monospace;
   font-size: 3.75rem;
   color: whitesmoke;
