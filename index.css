@@ -174,5 +174,82 @@ h2 {
   .navbar a {
     padding: 0.5rem;
     }
+}
 
+@media (max-width: 1200px) {
+
+  body {
+    padding-top: 2.5rem;
+  }
+
+  .overlay-text {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .image-row {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .side-images {
+    width: 10%;
+  }
+
+  .image {
+    max-width: 80%;
+  }
+  
+  .navbar ul {
+    padding: 0.5rem;
+    }
+  
+  .navbar li {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    }
+  
+  .navbar a {
+    padding: 0.5rem;
+    }
+}
+
+@media (max-width: 1400px) {
+
+  body {
+    padding-top: 2.5rem;
+  }
+
+  .overlay-text {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .image-row {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .side-images {
+    width: 10%;
+  }
+
+  .image {
+    max-width: 80%;
+  }
+  
+  .navbar ul {
+    padding: 0.5rem;
+    }
+  
+  .navbar li {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    }
+  
+  .navbar a {
+    padding: 0.5rem;
+    }
 }
