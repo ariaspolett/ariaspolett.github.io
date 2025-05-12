@@ -15,8 +15,13 @@
 body {
   width: 100%;
   height: 100vh;
-  margin: 0;
-  background-color: rgb(64, 80, 172);
+  background-image: url('images/matthew-mcbrayerblue.gif');
+  justify-content: space-evenly;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-direction: column;
 }
 
 .navbar {
@@ -61,7 +66,7 @@ body {
 }
 
 h1 {
-  margin-top: 0;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   font-family: 'Courier New', Courier, monospace;
   font-size: 3.75rem;
@@ -87,7 +92,6 @@ h2 {
   background-repeat: no-repeat;
   position: relative;
   flex-direction: column;
-  background-image: url('images/matthew-mcbrayerblue.gif');
 }
 
 .overlay-text {
@@ -103,50 +107,189 @@ h2 {
   border-radius: 0.625rem;
 }
 
-.project-tile {
-  position: relative;
-  display: inline-block;
-  background: #bde0fec2;
-  color: #003049;
-  font-weight: bold;
-  font-family: sans-serif;
+#hangman-section {
+  background-color: #000;
+  color: #0f0;
+  font-family: 'VT323', monospace;
+  padding: 2rem;
+  border: 3px dotted #0f0;
+  box-shadow: 0 0 20px #0f0;
   text-align: center;
-  text-decoration: none;
-  padding: 2rem 4rem; /* 32px top/bottom, 64px left/right */
-  border-radius: 3.125rem; /* 50px */
-  cursor: pointer;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* 4px 8px */
-  transition: transform 0.2s;
-  z-index: 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem auto;
+}
+
+button {
+  background-color: black;
+  color: #0f0;
+  border: 2px solid #0f0;
+  padding: 0.75rem 1.5rem;
+  font-family: 'VT323', monospace;
   font-size: 1.2rem;
-  margin: 2rem;
+  cursor: pointer;
+  text-shadow: 0 0 3px #0f0;
 }
 
-.project-tile::before,
-.project-tile::after {
-  content: '';
-  position: absolute;
-  background: #bde0fe9f;
-  border-radius: 50%;
-  z-index: -1;
+button:hover {
+  background-color: #0f0;
+  color: black;
 }
 
-.project-tile::before {
-  width: 5rem;  /* 80px */
-  height: 5rem;
-  top: -2.5rem; /* -40px */
-  left: 10%;
+#ascii-art {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  white-space: pre;
 }
 
-.project-tile::after {
-  width: 6.25rem;  /* 100px */
-  height: 6.25rem;
-  top: -3.125rem;  /* -50px */
-  right: 10%;
-}
-
-.project-tile:hover {
-  transform: scale(1.05);
-}
 
 /* Responsive adjustments for smaller screens */
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+
+  .overlay-text {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .image-row {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .side-images {
+    width: 10%;
+  }
+
+  .image {
+    max-width: 80%;
+  }
+  
+  .navbar ul {
+    padding: 0.5rem;
+    }
+  
+  .navbar li {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    }
+  
+  .navbar a {
+    padding: 0.5rem;
+    }
+  
+    #hangman-section {
+    padding: 1rem;
+  }
+
+  #ascii-art {
+    font-size: 0.9rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  button {
+    width: 100%;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 1200px) {
+
+  .overlay-text {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .image-row {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .side-images {
+    width: 10%;
+  }
+
+  .image {
+    max-width: 80%;
+  }
+  
+  .navbar ul {
+    padding: 0.5rem;
+    }
+  
+  .navbar li {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    }
+  
+  .navbar a {
+    padding: 0.5rem;
+    }
+  
+  #ascii-art {
+    font-size: 1rem;
+  }
+
+  .button-container {
+    flex-wrap: wrap;
+    gap: 0.75rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .overlay-text {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  .image-row {
+    flex-direction: row;
+    gap: 0.5rem;
+    flex-wrap: nowrap;
+  }
+
+  .side-images {
+    width: 10%;
+  }
+
+  .image {
+    max-width: 80%;
+  }
+  
+  .navbar ul {
+    padding: 0.5rem;
+    }
+  
+  .navbar li {
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    }
+  
+  .navbar a {
+    padding: 0.5rem;
+    }
+
+  #ascii-art {
+    font-size: 1.1rem;
+  }
+
+  button {
+    font-size: 1.1rem;
+    padding: 0.7rem 1.2rem;
+  }
+}

@@ -1,0 +1,113 @@
+body {
+    font-family: 'VT323', monospace;
+    font-size: 1.4rem;
+    background: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      to bottom,
+      rgba(0, 223, 0, 0.329),
+      rgba(0, 223, 0, 0.329) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+    z-index: 1000;
+}
+
+/* Fullscreen flex container to center the game */
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+}
+  
+
+#hangman-game {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: #9900ff;
+    color: #0f0;
+    border: 0.2rem dotted #0f0;
+    box-shadow:
+      0 0 5px #0f0,
+      0 0 10px #0f0,
+      0 0 20px #0f0;
+    border-radius: 10px;
+    text-shadow: 0 0 3px #0f0;
+}
+  
+  
+#hangman-art {
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+    white-space: pre;
+    line-height: 1.2;
+    margin: 1rem 0;
+    color: rgba(0, 253, 0, 0.705);
+    justify-self: center;
+}
+  
+#word-display {
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    margin: 1rem 0;
+    align-items: center;
+}
+  
+#letters button {
+    margin: 0.2rem;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+    background-color: #001aff;
+    color: white;
+}
+  
+#letters button:disabled {
+    background-color: #f700ff;
+    color: white;
+    cursor: not-allowed;
+}
+  
+#message {
+    font-weight: bold;
+    color: rgb(0, 253, 0, 0.705);
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+  
+.words {
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    color: #0f0;
+    background-color: rgb(0, 0, 155);
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+}
+
+.dropdown {
+    color: #0f0;
+    background-color: rgb(0, 0, 155);
+    font-family: 'VT323', monospace;
+    font-size: 2rem;
+}
